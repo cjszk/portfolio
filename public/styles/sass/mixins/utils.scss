@@ -1,0 +1,16 @@
+.mastery {
+    background-image: linear-gradient(to left, rgba(black, 1), rgba(black, .75));
+    color: white;
+}
+
+.proficient {
+    background-image: linear-gradient(to left, rgba(green, 1), rgba(green, .75));
+}
+
+.intermediate {
+    background-image: linear-gradient(to left, rgba(skyblue, 1), rgba(skyblue, .75));
+}
+
+.novice {
+    background-image: linear-gradient(to left, rgba(yellow, 1), rgba(yellow, .75));
+}

@@ -1,0 +1,76 @@
+.main-container {
+    font-size: 1.5rem;
+    display: inline-block;
+
+    padding: 2rem;
+
+    //margin-left: 20% takes it past the anchor in the desktop view.
+    margin-left: 30rem;
+    @include respond(phone) {
+        margin-left: 0%;
+    }
+}
+
+.about-me {
+    padding: 1rem 0;
+
+    &__header {
+        padding: 1rem 0;
+        font-size: 3rem;
+    }
+
+    &__paragraph {
+        padding: 1rem 1rem;
+        font-size: 2rem;
+
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.projects {
+    font-size: 2rem;
+    margin-left: -2rem;
+
+    &__header {
+        font-size: 3rem;
+        padding: 1rem 0 2rem 0;
+        color: black;
+    }
+
+    &__project {
+        padding: 1rem;
+        margin: 1rem;
+        background-image: linear-gradient(to left, rgba($color-three, .4), rgba($color-three, .4));
+        color: white;
+    }
+
+    &__flow-tools {
+        padding: 1rem;
+        border: 1px solid black;
+        background-image: linear-gradient(to left, rgba($color-one, .6), rgba($color-one, .6));
+
+        &__image {
+            width: 75%;
+        }
+
+        &__tech-used {
+            margin-top: 1rem;
+        }
+    }
+
+    &__macronator {
+        padding: 1rem;
+        border: 1px solid black;
+        background-image: linear-gradient(to left, rgba($color-one, .6), rgba($color-one, .6));
+
+        &__image {
+            width: 75%;
+        }
+
+        &__tech-used {
+            margin-top: 1rem;
+        }
+    }
+}

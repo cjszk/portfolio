@@ -1,0 +1,162 @@
+.mobile-anchor {
+    padding: 1rem;
+    background-color: $color-four;
+
+    @media (min-width: 1080px) {
+        position: fixed;
+        visibility: hidden;
+        left: -1000px;
+    }
+
+    &__me {
+        padding: 0rem;
+    }
+
+    &__name {
+        font-size: 2rem;
+    }
+
+    &__job-title {
+        font-size: 1.75rem;
+        margin-left: 2rem;
+    }
+
+    &__contact-info {
+        float:right;
+        text-align: right;
+
+        &__phone {
+            font-size: 1.5rem;
+        }
+    
+        &__email {
+            font-size: 1.5rem;
+        }
+    }
+    
+    &__my-tech {
+        padding: 2rem;
+
+        &__header {
+            font-size: 3rem;
+        }
+
+        &__ul {
+            list-style: none;
+        }
+
+        &__li {
+            margin: 1rem;
+            display: inline-block;
+            vertical-align: top;
+            width: 42.5%;
+        }
+
+        &__tech {
+            font-size: 2rem;
+        }
+
+        &__html-bar {
+            text-align: center;
+            padding: .3rem;
+            border: 1px solid black;
+            display: block;
+            width: 80%;
+            height: 12px;
+            border-radius: .25rem;
+        }
+
+        &__css-bar {
+            text-align: center;
+            padding: .3rem;
+            border: 1px solid black;
+            display: block;
+            width: 80%;
+            height: 12px;
+            border-radius: .25rem;
+        }
+
+        &__javascript-bar {
+            text-align: center;
+            padding: .3rem;
+            border: 1px solid black;
+            display: block;
+            width: 80%;
+            height: 12px;
+            border-radius: .25rem;
+        }
+
+        &__python-bar {
+            text-align: center;
+            padding: .3rem;
+            border: 1px solid black;
+            display: block;
+            width: 50%;
+            height: 12px;
+            border-radius: .25rem;
+        }
+
+        &__sub-tech {
+            font-size: 1.5rem;
+        }
+        
+        &__database-tech-li {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        &__database-tech {
+            font-size: 2rem;
+        }
+
+        &__database-tech-list {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__currently-learning {
+        padding: 0 0 2rem 2rem;
+
+        &__header {
+            font-size: 2rem;
+        }
+
+        &__ul {
+            list-style: none;
+        }
+        
+        &__li {
+            margin: 1rem;
+            display: inline-block;
+            vertical-align: top;
+            width: 42.5%;
+        }
+
+        &__tech {
+            font-size: 2rem;
+        }
+
+        &__python-bar {
+            text-align: center;
+            padding: .3rem;
+            background-image: linear-gradient(to left, rgba(pink, 1), rgba(pink, .75));
+            border: 1px solid black;
+            display: block;
+            width: 50%;
+            height: 12px;
+            border-radius: .25rem;
+        }
+
+        &__c-sharp-bar {
+            text-align: center;
+            padding: .3rem;
+            background-image: linear-gradient(to left, rgba(pink, 1), rgba(pink, .75));
+            border: 1px solid black;
+            display: block;
+            width: 25%;
+            height: 12px;
+            border-radius: .25rem;
+        }
+    }
+}

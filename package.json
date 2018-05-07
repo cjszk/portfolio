@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Christopher Whiteman's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass public/styles/sass/main.scss public/styles/index.css -w"
+  },
+  "author": "Christopher Whiteman",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.0",
+    "sass": "^1.3.2"
+  }
+}
