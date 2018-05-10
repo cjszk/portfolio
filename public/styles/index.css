@@ -41,17 +41,20 @@ body {
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
-  background-color: #EDDBCD;
+  background-color: #000000;
   color: #000; }
   body * {
     font-family: 'Ubuntu Condensed', sans-serif; }
 
+a {
+  color: #B82601; }
+
 .anchor {
   font-size: 1.5rem;
   position: fixed;
-  width: 30rem;
+  width: 25rem;
   height: 100vh;
-  background-color: #CDCDCD;
+  color: white;
   padding: 1rem; }
   @media (max-width: 1080px) {
     .anchor {
@@ -68,6 +71,12 @@ body {
   .anchor__job-title {
     font-size: 1.75rem;
     margin-left: 1rem; }
+  .anchor__photo {
+    width: 20rem;
+    margin: -2rem 2.5rem -3rem 2.5rem;
+    float: right;
+    border-radius: 50%;
+    transform: scale(0.7); }
   .anchor__my-tech__li {
     list-style: none;
     margin-left: 1rem;
@@ -79,7 +88,7 @@ body {
     padding: .3rem;
     border: 1px solid black;
     display: block;
-    width: 80%;
+    width: 100%;
     height: 24px;
     border-radius: .25rem; }
   .anchor__my-tech__css-bar {
@@ -87,7 +96,7 @@ body {
     padding: .3rem;
     border: 1px solid black;
     display: block;
-    width: 80%;
+    width: 100%;
     height: 24px;
     border-radius: .25rem; }
   .anchor__my-tech__javascript-bar {
@@ -95,15 +104,16 @@ body {
     padding: .3rem;
     border: 1px solid black;
     display: block;
-    width: 80%;
+    width: 100%;
     height: 24px;
     border-radius: .25rem; }
   .anchor__my-tech__python-bar {
+    color: black;
     text-align: center;
     padding: .3rem;
     border: 1px solid black;
     display: block;
-    width: 50%;
+    width: 65%;
     height: 24px;
     border-radius: .25rem; }
   .anchor__my-tech__database-tech-li {
@@ -119,21 +129,23 @@ body {
   .anchor__currently-learning__tech {
     font-size: 2rem; }
   .anchor__currently-learning__python-bar {
+    color: black;
     text-align: center;
     padding: .3rem;
     background-image: linear-gradient(to left, pink, rgba(255, 192, 203, 0.75));
     border: 1px solid black;
     display: block;
-    width: 50%;
+    width: 65%;
     height: 24px;
     border-radius: .25rem; }
   .anchor__currently-learning__c-sharp-bar {
+    color: black;
     text-align: center;
     padding: .3rem;
     background-image: linear-gradient(to left, pink, rgba(255, 192, 203, 0.75));
     border: 1px solid black;
     display: block;
-    width: 25%;
+    width: 33%;
     height: 24px;
     border-radius: .25rem; }
   .anchor__links__link {
@@ -141,8 +153,10 @@ body {
     margin: 1rem; }
 
 .mobile-anchor {
+  margin: 1rem;
   padding: 1rem;
-  background-color: #CDCDCD; }
+  color: #fff;
+  background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8)); }
   @media (min-width: 1080px) {
     .mobile-anchor {
       position: fixed;
@@ -253,13 +267,15 @@ body {
   font-size: 1.5rem;
   display: inline-block;
   padding: 2rem;
-  margin-left: 30rem; }
-  @media (max-width: 40em) {
+  margin-left: 25rem; }
+  @media (max-width: 1080px) {
     .main-container {
       margin-left: 0%; } }
 
 .about-me {
-  padding: 1rem 0; }
+  padding: 2rem;
+  background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8));
+  color: #fff; }
   .about-me__header {
     padding: 1rem 0;
     font-size: 3rem; }
@@ -272,29 +288,40 @@ body {
 
 .projects {
   font-size: 2rem;
-  margin-left: -2rem; }
+  background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8)); }
   .projects__header {
     font-size: 3rem;
     padding: 1rem 0 2rem 0;
-    color: black; }
+    color: #fff; }
   .projects__project {
     padding: 1rem;
     margin: 1rem;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    color: white; }
+    color: #fff; }
   .projects__flow-tools {
     padding: 1rem;
     border: 1px solid black;
-    background-image: linear-gradient(to left, rgba(192, 96, 20, 0.6), rgba(192, 96, 20, 0.6)); }
+    background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8)); }
+    .projects__flow-tools__header {
+      padding-bottom: 1rem;
+      color: #fff; }
     .projects__flow-tools__image {
       width: 75%; }
     .projects__flow-tools__tech-used {
       margin-top: 1rem; }
+    .projects__flow-tools__why {
+      font-size: 1.5rem;
+      color: #813772; }
   .projects__macronator {
     padding: 1rem;
     border: 1px solid black;
-    background-image: linear-gradient(to left, rgba(192, 96, 20, 0.6), rgba(192, 96, 20, 0.6)); }
+    background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8)); }
+    .projects__macronator__header {
+      padding-bottom: 1rem;
+      color: #fff; }
     .projects__macronator__image {
       width: 75%; }
     .projects__macronator__tech-used {
       margin-top: 1rem; }
+    .projects__macronator__why {
+      font-size: 1.5rem;
+      color: #813772; }

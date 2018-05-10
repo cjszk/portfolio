@@ -1,6 +1,8 @@
 .mobile-anchor {
+    margin: 1rem;
     padding: 1rem;
-    background-color: $color-four;
+    color: $color-white;
+    background-image: linear-gradient(to left, rgba($color-three, .8), rgba($color-three, .8));
 
     @media (min-width: 1080px) {
         position: fixed;
