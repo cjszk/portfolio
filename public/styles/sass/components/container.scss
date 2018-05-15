@@ -14,7 +14,7 @@
 .about-me {
     padding: 2rem;
     background-image: linear-gradient(to left, rgba($color-three, .8), rgba($color-three, .8));
-    color: $color-white;
+    color: $font-color;
 
     &__header {
         padding: 1rem 0;
@@ -29,6 +29,32 @@
             font-size: 1.5rem;
         }
     }
+
+    &__programmer {
+
+        &__header {
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 2.5rem;
+        }
+
+        &__paragraph {
+            font-family: 'Abel', cursive;
+        }
+    }
+
+    &__personal {
+
+        &__header {
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 2.5rem;
+        }
+        
+        &__paragraph {
+            font-family: 'Abel', cursive;
+        }
+    }
 }
 
 .projects {
@@ -38,13 +64,13 @@
     &__header {
         font-size: 3rem;
         padding: 1rem 0 2rem 0;
-        color: $color-white;
+        color: $font-color;
     }
 
     &__project {
         padding: 1rem;
         margin: 1rem;
-        color: $color-white;
+        color: $font-color;
     }
 
     &__flow-tools {
@@ -54,11 +80,15 @@
 
         &__header {
             padding-bottom: 1rem;
-            color: $color-white;
+            color: $font-color;
         }
 
         &__image {
             width: 75%;
+        }
+
+        &__description {
+            font-family: 'Abel', cursive;
         }
 
         &__tech-used {
@@ -66,8 +96,13 @@
         }
 
         &__why {
-            font-size: 1.5rem;
+            font-family: 'Abel', cursive;
+            font-size: 2rem;
             color: $color-four;
+        }
+
+        &__github {
+            opacity: .8;
         }
     }
 
@@ -78,11 +113,15 @@
 
         &__header {
             padding-bottom: 1rem;
-            color: $color-white;
+            color: $font-color;
         }
 
         &__image {
             width: 75%;
+        }
+
+        &__description {
+            font-family: 'Abel', cursive;
         }
 
         &__tech-used {
@@ -90,8 +129,46 @@
         }
 
         &__why {
-            font-size: 1.5rem;
+            font-family: 'Abel', cursive;
+            font-size: 2rem;
             color: $color-four;
+        }
+
+        &__github {
+            opacity: .8;
+        }
+    }
+
+    &__bookmarks {
+        padding: 1rem;
+        border: 1px solid black;
+        background-image: linear-gradient(to left, rgba($color-three, .8), rgba($color-three, .8));
+
+        &__header {
+            padding-bottom: 1rem;
+            color: $font-color;
+        }
+
+        &__image {
+            width: 75%;
+        }
+
+        &__description {
+            font-family: 'Abel', cursive;
+        }
+
+        &__tech-used {
+            margin-top: 1rem;
+        }
+
+        &__why {
+            font-family: 'Abel', cursive;
+            font-size: 2rem;
+            color: $color-four;
+        }
+
+        &__github {
+            opacity: .8;
         }
     }
 }

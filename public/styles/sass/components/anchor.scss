@@ -5,7 +5,7 @@
     height: 100vh;
     //background-color: $color-four;
 
-    color: white;
+    color: $font-color;
     
     @media (max-width: 1080px) {
         visibility: hidden;
@@ -127,7 +127,7 @@
             color: black;
             text-align: center;
             padding: .3rem;
-            background-image: linear-gradient(to left, rgba(pink, 1), rgba(pink, .75));
+            background-image: linear-gradient(to left, rgba(skyblue, 1), rgba(skyblue, .75));
             border: 1px solid black;
             display: block;
             width: 65%;
@@ -139,7 +139,7 @@
             color: black;
             text-align: center;
             padding: .3rem;
-            background-image: linear-gradient(to left, rgba(pink, 1), rgba(pink, .75));
+            background-image: linear-gradient(to left, rgba(skyblue, 1), rgba(skyblue, .75));
             border: 1px solid black;
             display: block;
             width: 33%;

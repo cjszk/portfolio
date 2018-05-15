@@ -50,14 +50,14 @@ body {
     font-family: 'Ubuntu Condensed', sans-serif; }
 
 a {
-  color: #B82601; }
+  color: #00cf80; }
 
 .anchor {
   font-size: 1.5rem;
   position: fixed;
   width: 25rem;
   height: 100vh;
-  color: white;
+  color: #999;
   padding: 1rem; }
   @media (max-width: 1080px) {
     .anchor {
@@ -135,7 +135,7 @@ a {
     color: black;
     text-align: center;
     padding: .3rem;
-    background-image: linear-gradient(to left, pink, rgba(255, 192, 203, 0.75));
+    background-image: linear-gradient(to left, skyblue, rgba(135, 206, 235, 0.75));
     border: 1px solid black;
     display: block;
     width: 65%;
@@ -145,7 +145,7 @@ a {
     color: black;
     text-align: center;
     padding: .3rem;
-    background-image: linear-gradient(to left, pink, rgba(255, 192, 203, 0.75));
+    background-image: linear-gradient(to left, skyblue, rgba(135, 206, 235, 0.75));
     border: 1px solid black;
     display: block;
     width: 33%;
@@ -158,7 +158,7 @@ a {
 .mobile-anchor {
   margin: 1rem;
   padding: 1rem;
-  color: #fff;
+  color: #999;
   background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8)); }
   @media (min-width: 1080px) {
     .mobile-anchor {
@@ -250,7 +250,7 @@ a {
     .mobile-anchor__currently-learning__python-bar {
       text-align: center;
       padding: .3rem;
-      background-image: linear-gradient(to left, pink, rgba(255, 192, 203, 0.75));
+      background-image: linear-gradient(to left, skyblue, rgba(135, 206, 235, 0.75));
       border: 1px solid black;
       display: block;
       width: 50%;
@@ -259,7 +259,7 @@ a {
     .mobile-anchor__currently-learning__c-sharp-bar {
       text-align: center;
       padding: .3rem;
-      background-image: linear-gradient(to left, pink, rgba(255, 192, 203, 0.75));
+      background-image: linear-gradient(to left, skyblue, rgba(135, 206, 235, 0.75));
       border: 1px solid black;
       display: block;
       width: 25%;
@@ -278,7 +278,7 @@ a {
 .about-me {
   padding: 2rem;
   background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8));
-  color: #fff; }
+  color: #999; }
   .about-me__header {
     padding: 1rem 0;
     font-size: 3rem; }
@@ -288,6 +288,18 @@ a {
     @media (max-width: 40em) {
       .about-me__paragraph {
         font-size: 1.5rem; } }
+  .about-me__programmer__header {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2.5rem; }
+  .about-me__programmer__paragraph {
+    font-family: 'Abel', cursive; }
+  .about-me__personal__header {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2.5rem; }
+  .about-me__personal__paragraph {
+    font-family: 'Abel', cursive; }
 
 .projects {
   font-size: 2rem;
@@ -295,36 +307,65 @@ a {
   .projects__header {
     font-size: 3rem;
     padding: 1rem 0 2rem 0;
-    color: #fff; }
+    color: #999; }
   .projects__project {
     padding: 1rem;
     margin: 1rem;
-    color: #fff; }
+    color: #999; }
   .projects__flow-tools {
     padding: 1rem;
     border: 1px solid black;
     background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8)); }
     .projects__flow-tools__header {
       padding-bottom: 1rem;
-      color: #fff; }
+      color: #999; }
     .projects__flow-tools__image {
       width: 75%; }
+    .projects__flow-tools__description {
+      font-family: 'Abel', cursive; }
     .projects__flow-tools__tech-used {
       margin-top: 1rem; }
     .projects__flow-tools__why {
-      font-size: 1.5rem;
-      color: #813772; }
+      font-family: 'Abel', cursive;
+      font-size: 2rem;
+      color: #b2cce5; }
+    .projects__flow-tools__github {
+      opacity: .8; }
   .projects__macronator {
     padding: 1rem;
     border: 1px solid black;
     background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8)); }
     .projects__macronator__header {
       padding-bottom: 1rem;
-      color: #fff; }
+      color: #999; }
     .projects__macronator__image {
       width: 75%; }
+    .projects__macronator__description {
+      font-family: 'Abel', cursive; }
     .projects__macronator__tech-used {
       margin-top: 1rem; }
     .projects__macronator__why {
-      font-size: 1.5rem;
-      color: #813772; }
+      font-family: 'Abel', cursive;
+      font-size: 2rem;
+      color: #b2cce5; }
+    .projects__macronator__github {
+      opacity: .8; }
+  .projects__bookmarks {
+    padding: 1rem;
+    border: 1px solid black;
+    background-image: linear-gradient(to left, rgba(6, 47, 79, 0.8), rgba(6, 47, 79, 0.8)); }
+    .projects__bookmarks__header {
+      padding-bottom: 1rem;
+      color: #999; }
+    .projects__bookmarks__image {
+      width: 75%; }
+    .projects__bookmarks__description {
+      font-family: 'Abel', cursive; }
+    .projects__bookmarks__tech-used {
+      margin-top: 1rem; }
+    .projects__bookmarks__why {
+      font-family: 'Abel', cursive;
+      font-size: 2rem;
+      color: #b2cce5; }
+    .projects__bookmarks__github {
+      opacity: .8; }
